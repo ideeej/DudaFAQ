@@ -1,0 +1,43 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.accordion {
+    margin: 0.25em 20%;
+
+    background-color: #eee;
+}
+
+.accordion-header {
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: 700;
+}
+
+.active,
+.accordion-header:hover {
+    background-color: #aaa;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.accordion-content span {
+    display: block;
+    padding: 1em;
+    line-height: 1.1rem;
+    text-align: justify;
+}
+  
